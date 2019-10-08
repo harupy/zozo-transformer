@@ -2,7 +2,7 @@
 
 ## Motivation
 
-Mercari proposed an interesting method to transofrom an image query feature.
+Mercari proposed an interesting method to enhance image-based item search.
 
 https://sigir-ecom.github.io/ecom19Papers/paper3.pdf
 
@@ -12,10 +12,8 @@ Sample images are collected from [ZOZOTOWN](https://zozo.jp/).
 
 ## Feature Extractor
 
-ResNet50 trained on Imagenet (The paper says they used MobileNetV2 for edge computing.)
+ResNet50 trained on Imagenet (The paper says the authors used MobileNetV2.)
 
 ## Result
-
-I'm still trying to figure out which combination of features works the best.
 
 ![result.png](./output/result.png)
