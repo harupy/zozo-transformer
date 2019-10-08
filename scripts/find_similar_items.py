@@ -85,7 +85,8 @@ def main():
 
     vectors = l2_norm(df.values)
 
-    for query_vector in df_person.sample(nrows, random_state=300).values.reshape(nrows, 1, -1):
+    samples = df_person.sample(nrows, random_state=32)
+    for query_vector in samples.values.reshape(nrows, 1, -1):
         # transform query feature
         query_vector_transformed = transform(query_vector, transform_vector)
 
